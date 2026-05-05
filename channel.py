@@ -197,9 +197,9 @@ with st.sidebar:
     st.divider()
 
     st.header("Electricity Prices")
-    st.write(f"Normal rate: **${BASE_RATE}/kWh**")
-    st.write(f"Peak rate: **${PEAK_RATE}/kWh**")
-    st.write(f"Penalty rate: **${PENALTY_RATE}/kWh**")
+    st.write(f"Normal rate: **EGP{BASE_RATE}/kWh**")
+    st.write(f"Peak rate: **EGP{PEAK_RATE}/kWh**")
+    st.write(f"Penalty rate: **EGP{PENALTY_RATE}/kWh**")
     st.write(f"Loyalty discount: **{int(DISCOUNT_RATE * 100)}%**")
 
 
