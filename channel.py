@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, r2_score
+import base64
 
 
 st.set_page_config(
@@ -13,6 +14,45 @@ st.set_page_config(
     page_icon="⚡",
     layout="wide"
 )
+
+
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+img = get_base64_image("C:/Users/Mega Store/Downloads/360_F_432925015_F9ABhDbYB59L14rMt77rgl6gLNAw6jeC.jpg")
+
+page_bg = f"""
+<style>
+
+[data-testid="stAppViewContainer"] {{
+background-image:
+linear-gradient(rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url("data:image/jpg;base64,{img}");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stSidebar"] {{
+background: rgba(0,0,0,0.3);
+}}
+
+h1, h2, h3, h4, h5, h6, p, label, div {{
+color: white;
+}}
+
+</style>
+"""
+
+st.markdown(page_bg, unsafe_allow_html=True)
 
 
 BASE_RATE = 0.25
