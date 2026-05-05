@@ -20,7 +20,7 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-img = get_base64_image("C:/Users/Mega Store/Downloads/360_F_432925015_F9ABhDbYB59L14rMt77rgl6gLNAw6jeC.jpg")
+img = get_base64_image("360_F_432925015_F9ABhDbYB59L14rMt77rgl6gLNAw6jeC.jpg")
 
 page_bg = f"""
 <style>
