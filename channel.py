@@ -458,7 +458,7 @@ Your home automation system decides what to do.
     c3.metric("Premium Usage", f"{premium_usage:.2f} kWh")
     c4.metric("Comfort Level", f"{comfort}%")
 
-    st.metric("Final Bill", f"${bill:.2f}")
+    st.metric("Final Bill", f"{bill:.2f} EGP")
 
     fig3 = go.Figure()
 
