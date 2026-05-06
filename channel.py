@@ -230,6 +230,7 @@ This app simulates three dynamic pricing scenarios:
 )
 
 with st.sidebar:
+    st.image("Alex.jpg")
     st.header("Model Performance")
     st.metric("MAE ( Mean Absolute Error )", f"{metrics['MAE']:.2f} kWh")
     st.metric("Model Score", f"{metrics['R2']:.2f}")
