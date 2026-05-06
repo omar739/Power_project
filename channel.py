@@ -243,7 +243,7 @@ with st.sidebar:
     st.write(f"Penalty rate: **{PENALTY_RATE} EGP/kWh**")
     st.write(f"Loyalty discount: **{int(DISCOUNT_RATE * 100)}%**")
     st.image("Dr.jpg")
-    st.header("Electrical Distribution : A theortical Framework")
+    st.header("Dynamic Pricing Simulator for Electrical Distribution")
     st.write("Supervised by : Dr. Alaa Hamam")
 
 
