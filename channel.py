@@ -242,6 +242,7 @@ with st.sidebar:
     st.write(f"Peak rate: **{PEAK_RATE} EGP/kWh**")
     st.write(f"Penalty rate: **{PENALTY_RATE} EGP/kWh**")
     st.write(f"Loyalty discount: **{int(DISCOUNT_RATE * 100)}%**")
+    st.image("Dr.jpg")
 
 
 col1, col2 = st.columns(2)
