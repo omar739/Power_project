@@ -231,8 +231,8 @@ This app simulates three dynamic pricing scenarios:
 
 with st.sidebar:
     st.header("Model Performance")
-    st.metric("MAE ( mean absolute error )", f"{metrics['MAE']:.2f} kWh")
-    st.metric("R² ( model score) ", f"{metrics['R2']:.2f}")
+    st.metric("MAE ( Mean Absolute Error )", f"{metrics['MAE']:.2f} kWh")
+    st.metric("Model Score", f"{metrics['R2']:.2f}")
 
     st.divider()
 
